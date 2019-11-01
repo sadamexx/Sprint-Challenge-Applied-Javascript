@@ -20,7 +20,7 @@ function Header() {
 
 
     const mainh1 = document.createElement('h1');
-    mainDate.textContent = 'Lambda Times';
+    mainh1.textContent = 'Lambda Times';
     mainDiv.appendChild(mainh1);
 
     const mainTemp = document.createElement('span');
@@ -31,7 +31,7 @@ function Header() {
 return mainDiv;
 };
 
-const headerOne = Header();
+// const headerOne = Header();
 const parentHeader = document.querySelector('.header-container');
-parentHeader.appendChild(headerOne);
+parentHeader.appendChild(Header());
 
